@@ -1,4 +1,33 @@
 {
   "category": "photo-and-gallery",
-  "templates": []
+  "templates": [
+    {
+      "name": "Por-trayal",
+      "folder": "por-trayal",
+      "version": "1.0.0",
+      "description": "Por-trayal \u2013 static HTML/Bootstrap Photo Gallery website template.",
+      "idealFor": [
+        "art galleries",
+        "photographers",
+        "online art stores"
+      ],
+      "requiredClientInputs": [
+        "galleryName",
+        "artworkImages",
+        "productPrices",
+        "aboutText",
+        "contactEmail",
+        "socialLinks"
+      ],
+      "preview": "por-trayal/preview.png",
+      "orderNumber": "TVORD42531631",
+      "license": {
+        "templateOrderAmount": 0.0,
+        "creditRemovalPermitted": true,
+        "accountLicense": [
+          "TVORD30331596 Pro \u2014 Lifetime"
+        ]
+      }
+    }
+  ]
 }

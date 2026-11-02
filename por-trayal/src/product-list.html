@@ -1,0 +1,526 @@
+<!--
+Template Name: Por-trayal (v2.0)
+File Name: product-list.html
+Author Name: ThemeVault
+Author URI: https://www.themevault.net/
+License URI: https://www.themevault.net/license/
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Por-trayal — Shop, List View</title>
+    <meta name="description" content="The art shop in list view: larger previews with descriptions, prices and add-to-cart for every piece.">
+    <meta name="author" content="ThemeVault">
+    <link rel="icon" href="images/favicon.png">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/fontawesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- header -->
+    <header>
+        <div class="top-line">
+            <div class="container top-box">
+                <div class="leftside">
+                    <div class="language-block">
+                        <div class="dropdown">
+                            <span class="toggle dropdown-toggle" data-bs-toggle="dropdown" role="button" tabindex="0" aria-expanded="false">ENGLISH
+                                <span class="fa fa-angle-down" aria-hidden="true"></span></span>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">CHINESE</a></li>
+                                <li><a href="#">FRENCH</a></li>
+                                <li><a href="#">SPANISH</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="currency-block">
+                        <div class="dropdown">
+                            <span class="toggle dropdown-toggle" data-bs-toggle="dropdown" role="button" tabindex="0" aria-expanded="false">US DOLLAR
+                                <span class="fa fa-angle-down" aria-hidden="true"></span></span>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">POUND</a></li>
+                                <li><a href="#">EURO</a></li>
+                                <li><a href="#">RUPEES</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="social-icon-block">
+                        <ul class="social-list">
+                            <li><a href="#" aria-label="Por-trayal on Facebook"><i class="fa-brands fa-facebook fa-2x" aria-hidden="true"></i></a></li>
+                            <li><a href="#" aria-label="Por-trayal on Twitter"><i class="fa-brands fa-square-twitter fa-2x" aria-hidden="true"></i></a></li>
+                            <li><a href="#" aria-label="Por-trayal on Google Plus"><i class="fa-brands fa-square-google-plus fa-2x" aria-hidden="true"></i></a></li>
+                            <li><a href="#" aria-label="Por-trayal on LinkedIn"><i class="fa-brands fa-linkedin fa-2x" aria-hidden="true"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="rightside">
+                    <div class="top-button">
+                        <a href="#" aria-label="Compare"><i class="fa fa-retweet" aria-hidden="true"></i></a>
+                    </div>
+                    <div class="top-button">
+                        <a href="#" aria-label="Wish list"><i class="fa-regular fa-heart" aria-hidden="true"></i></a>
+                    </div>
+                    <div class="top-button">
+                        <div class="dropdown">
+                            <span class="toggle dropdown-toggle" data-bs-toggle="dropdown" role="button" tabindex="0" aria-expanded="false" aria-label="Account">
+                                <i class="fa fa-user" aria-hidden="true"></i>
+                            </span>
+                            <ul class="dropdown-menu">
+                                <li><a href="login.html">Login</a></li>
+                                <li><a href="register.html">Register</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- logo + search -->
+        <div class="container">
+            <div class="leftside">
+                <div class="logo">
+                    <a href="index.html"><img src="images/logo.png" alt="Por-trayal" class="img-fluid" width="200"></a>
+                </div>
+            </div>
+            <div class="rightside search-block">
+                <form class="input-group" id="search" role="search" action="product.html" method="get">
+                    <label class="visually-hidden" for="search-input">Search artwork</label>
+                    <input type="text" id="search-input" class="form-control form-control-lg search-box" placeholder="Search" name="search">
+                    <button class="btn btn-lg search-button" type="submit" aria-label="Search"><i class="fa fa-search" aria-hidden="true"></i></button>
+                </form>
+            </div>
+        </div>
+
+        <!-- navigation + cart -->
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-2"></div>
+                <div class="col-lg-7 col-md-7 col-7 rightside-add-space">
+                    <nav class="navbar navbar-expand-lg navbar-inverse menu-bar" aria-label="Main navigation">
+                        <div class="container-fluid">
+                            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#myNavbar" aria-controls="myNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="myNavbar">
+                                <ul class="nav navbar-nav">
+                                    <li><a href="index.html">Home</a></li>
+                                    <li><a href="about.html">About Us</a></li>
+                                    <li><a href="gallery.html">Gallery</a></li>
+                                    <li><a href="product.html">Shop</a></li>
+                                    <li><a href="contact.html">Contact</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+                <div class="col-lg-2 col-md-3 col-5 leftside-remove-space">
+                    <div class="btn-group btn-block box-cart">
+                        <img src="images/shopping-cart.png" width="30" alt="" aria-hidden="true">
+                        <a href="#" data-bs-toggle="dropdown" class="dropdown-toggle" role="button" aria-expanded="false"><span>Item 0 <i class="fa fa-caret-down" aria-hidden="true"></i></span></a>
+                        <ul class="dropdown-menu dropdown-menu-end btn-block cartView">
+                            <li>
+                                <table class="table">
+                                    <tbody>
+                                        <tr>
+                                            <td class="text-center">
+                                                <a href="single-product.html"><img class="img-fluid" title="Texture Design" alt="Texture Design" src="images/img6.jpg" width="40"></a>
+                                            </td>
+                                            <td class="text-start">
+                                                <a class="view_cart cart-product-name" href="single-product.html">Texture Design</a>
+                                            </td>
+                                            <td class="product-remove text-center"><a href="#" title="Remove" aria-label="Remove item"><i class="fa fa-times" aria-hidden="true"></i></a></td>
+                                        </tr>
+                                        <tr class="cart-row-divider">
+                                            <td class="text-end cart-qty"><span>Qty:</span> 1</td>
+                                            <td class="text-start cart-product-total">$122.00</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </li>
+                            <li>
+                                <div>
+                                    <table class="table">
+                                        <tbody>
+                                            <tr><td><strong>Sub-Total</strong></td><td>$100.00</td></tr>
+                                            <tr><td><strong>Eco Tax (-2.00)</strong></td><td>$2.00</td></tr>
+                                            <tr><td><strong>VAT (20%)</strong></td><td>$20.00</td></tr>
+                                            <tr><td><strong>Total</strong></td><td>$122.00</td></tr>
+                                        </tbody>
+                                    </table>
+                                    <a href="cart.html" class="btn btn-add-cart">
+                                        <span>View </span>
+                                        <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                                    </a>
+                                    <a href="checkout.html" class="btn btn-add-cart">
+                                        <span>Checkout </span>
+                                        <i class="fa fa-share" aria-hidden="true"></i>
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- main content -->
+    <main id="container">
+        <h1 class="visually-hidden">Shop all artwork, list view</h1>
+<div class="container">
+                <div class="row">
+                    <!--left sidebar---->
+                    <aside  class="col-md-3 left-sidebar">
+                        <div class="box category">
+                            <div class="box-heading">
+                                <h3>Categories <i class="fa fa-angle-up"></i></h3>
+                            </div>
+
+                            <div class="box-content test">
+                                <div class="box-category">
+                                    <ul class="menu">
+                                        <li><a class="custom_hover">Antic images</a></li>
+                                        <li><a class="custom_hover">Drawing</a>
+                                            <i class="fa fa-plus"></i>
+                                            <ul>
+                                                <li>
+                                                    <a class="parent" href="product.html">Praesent imperdiet</a><i class="fa fa-plus"></i>
+                                                    <ul>
+                                                        <li><a href="#">Aliquam eget</a></li>
+                                                        <li><a href="#">Lorem ipsum</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Aenean viverra</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li><a class="custom_hover">New Media</a></li>
+                                        <li><a class="custom_hover">painting</a></li>
+                                        <li><a class="custom_hover">Fine art</a></li>
+                                        <li><a class="custom_hover">Photography</a></li>
+                                        <li><a class="custom_hover">Decorative art</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box special">
+                            <div class="box-heading">
+                                <h3>Special</h3>
+                            </div>
+                            <div class="box-content">
+                                <div class="product-layout">
+                                    <ul class="list-unstyled">
+                                        <li>
+                                            <div class="product-thumb transiction">
+                                                <a class="compare-button"><i class="fa fa-retweet"></i></a>
+                                                <a class="wishlist-button"><i class="fa-regular fa-heart"></i></a>
+                                                <div class="image"><a href="single-product.html"><img src="images/img1.jpg" class="img-fluid"></a></div>
+                                                <div class="caption">
+                                                    <div class="product-name"><a href="#">Texture Design</a></div>
+                                                    <div class="price">
+                                                        <span class="price-new">$34.90</span>
+                                                        <span class="price-old">$49.50</span>
+                                                    </div>
+                                                </div>
+                                                <div class="cart-button">
+                                                    <a class="btn btn-add-cart" href="cart.html">
+                                                        <span>
+                                                            Add to Cart </span>
+                                                        <i class="fa fa-shopping-cart"></i>
+                                                    </a>
+                                                </div>
+                                                <div class="clearfix"></div>
+                                            </div>
+                                        </li>
+
+                                        <li>
+                                            <div class="product-thumb transiction">
+                                                <a class="compare-button"><i class="fa fa-retweet"></i></a>
+                                                <a class="wishlist-button"><i class="fa-regular fa-heart"></i></a>
+                                                <div class="image"><a href="single-product.html"><img src="images/img6.jpg" class="img-fluid"></a></div>
+                                                <div class="caption">
+                                                    <div class="product-name"><a href="#">Soft Panting </a></div>
+                                                    <div class="price">
+                                                        <span class="price-new">$34.90</span>
+                                                        <span class="price-old"></span>
+                                                    </div>
+                                                </div>
+                                                <div class="cart-button">
+                                                    <a class="btn btn-add-cart" href="cart.html">
+                                                        <span>
+                                                            Add to Cart </span>
+                                                        <i class="fa fa-shopping-cart"></i>
+                                                    </a>
+                                                </div>
+                                                <div class="clearfix"></div>
+                                            </div>
+                                        </li>
+
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </aside>
+                    <!--end sidebar-->
+
+                    <!--main content-->
+                    <div class="col-md-9" id="content">         
+                        <ul class="breadcrumb">
+                            <li><a href="index.html"><i class="fa fa-home"></i></a></li>
+                            <li><a href="product-list.html">Product List</a></li>
+                        </ul>
+                        <h2>Texture Design</h2>
+                        <div class="row ref-search">
+                            <div class="col-md-2 col-12"><img class="img-thumbnail" src="images/art22.jpg"></div>
+                            <div class="col-md-10 col-12"><p>
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting</p>
+                            </div>
+                        </div>
+                        <hr>
+                        <h3>Refine Search</h3>
+
+                        <div class="row">
+                            <div class="col-md-12">
+                                <ul class="ref-search">
+                                    <li><a href="#">Paint soft (0)</a></li>
+                                    <li><a href="#">paint overlay</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="product-filter clearfix">
+                            <div class="row">
+                                <div class="col-lg-2">
+                                    <label for="input-sort" class="control-label">Sort By:</label>
+                                </div>
+                                <div class="col-lg-3">
+                                    <select class="form-control" id="input-sort">
+                                        <option selected="selected">Default</option>
+                                        <option>Name (A - Z)</option>
+                                        <option>Name (Z - A)</option>
+                                        <option>Price (Low &gt; High)</option>
+                                        <option>Price (High &gt; Low)</option>
+                                        <option>Rating (Highest)</option>
+                                        <option>Rating (Lowest)</option>
+                                        <option>Model (A - Z)</option>
+                                        <option>Model (Z - A)</option>
+                                    </select>
+                                </div>
+                                <div class="col-lg-2">
+                                    <label for="input-limit" class="control-label">Show:</label>
+                                </div>
+                                <div class="col-lg-3">
+                                    <select class="form-control" id="input-limit">
+                                        <option selected="selected" >15</option>
+                                        <option>25</option>
+                                        <option>50</option>
+                                        <option>75</option>
+                                        <option>100</option>
+                                    </select>
+                                </div>
+
+
+                                <div class="col-lg-2 text-end">
+                                    <div class="button-view">
+                                        <a  class="active" id="list-view" href="product-list.html"><i class="fa fa-th-list"></i></a>
+                                        <a  id="grid-view" href="product.html"><i class="fa fa-th"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="nav-cat-top clearfix">
+                            <div class="float-start"></div>
+                            <div class="float-start result-page">Showing 1 to 12 of 12 (1 Pages)</div>
+                            <div class="float-end">
+
+                                <a class="btn special-button" id="compare-total">
+                                    <span>Product Compare (1)</span>
+                                    <i class="fa fa-chevron-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="row product-gallery-list-block">
+                            <div class="product-layout product-list col-12">
+                                <div class="product-thumb">
+                                    <div class="image">
+                                        <a href="single-product.html"><img class="img-fluid" src="images/art1.jpg" loading="lazy"></a></div>
+                                    <div>
+                                        <div class="caption">
+                                            <h4><a href="single-product.html">Painting</a></h4>
+                                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                                            <p class="price">
+                                                <span class="price-new">$110.00</span> <span class="price-old">$122.00</span>
+                                                <span class="price-tax">Ex Tax: $90.00</span>
+                                            </p>
+                                        </div>
+                                        <div class="button-group">
+                                            <a class="btn special-button" href="cart.html"><i class="fa fa-shopping-cart"></i> <span>Add to Cart</span></a>
+                                            <button class="btn special-button" type="button"><i class="fa fa-heart"></i></button>
+                                            <button class="btn special-button" type="button"><i class="fa fa-exchange"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-layout product-list col-12">
+                                <div class="product-thumb">
+                                    <div class="image">
+                                        <a href="single-product.html"><img class="img-fluid" src="images/art2.jpg" loading="lazy"></a></div>
+                                    <div>
+                                        <div class="caption">
+                                            <h4><a href="single-product.html">Laterica</a></h4>
+                                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                                            <p class="price">
+                                                <span class="price-new">$150.00</span> <span class="price-old">$172.00</span>
+                                                <span class="price-tax">Ex Tax: $100.00</span>
+                                            </p>
+                                        </div>
+                                        <div class="button-group">
+                                            <a class="btn special-button" href="cart.html"><i class="fa fa-shopping-cart"></i> <span>Add to Cart</span></a>
+                                            <button class="btn special-button" type="button"><i class="fa fa-heart"></i></button>
+                                            <button class="btn special-button" type="button"><i class="fa fa-exchange"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-layout product-list col-12">
+                                <div class="product-thumb">
+                                    <div class="image">
+                                        <a href="single-product.html"><img class="img-fluid" src="images/art3.jpg" loading="lazy"></a></div>
+                                    <div>
+                                        <div class="caption">
+                                            <h4><a href="single-product.html">Painting Softness</a></h4>
+                                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                                            <p class="price">
+                                                <span class="price-new">$200.00</span>
+                                                <span class="price-tax">Ex Tax: $110.00</span>
+                                            </p>
+                                        </div>
+                                        <div class="button-group">
+                                            <a class="btn special-button" href="cart.html"><i class="fa fa-shopping-cart"></i> <span>Add to Cart</span></a>
+                                            <button class="btn special-button" type="button"><i class="fa fa-heart"></i></button>
+                                            <button class="btn special-button" type="button"><i class="fa fa-exchange"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-layout product-list col-12">
+                                <div class="product-thumb">
+                                    <div class="image">
+                                        <a href="single-product.html"><img class="img-fluid" src="images/art4.jpg" loading="lazy"></a></div>
+                                    <div>
+                                        <div class="caption">
+                                            <h4><a href="single-product.html">Painting Like</a></h4>
+                                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                                            <p class="price">
+                                                <span class="price-new">$110.00</span> <span class="price-old">$122.00</span>
+                                                <span class="price-tax">Ex Tax: $90.00</span>
+                                            </p>
+                                        </div>
+                                        <div class="button-group">
+                                            <a class="btn special-button" href="cart.html"><i class="fa fa-shopping-cart"></i> <span>Add to Cart</span></a>
+                                            <button class="btn special-button" type="button"><i class="fa fa-heart"></i></button>
+                                            <button class="btn special-button" type="button"><i class="fa fa-exchange"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-6 text-start"></div>
+                            <div class="col-md-6 text-end">Showing 1 to 12 of 12 (1 Pages)</div>
+                        </div>
+                    </div>
+                    <!--end main content-->
+                </div>
+            </div>
+        
+        <!--End of middle content-->
+    </main>
+
+    <!-- service strip -->
+    <div class="container">
+        <div class="row">
+            <div class="bottom-block">
+                <div class="col-lg-4">
+                    <div class="bottom-block-heading"><h4>Free Shopping <span><i class="fa fa-truck" aria-hidden="true"></i></span></h4></div>
+                    <div class="bottom-block-description">
+                        <p>Free delivery on all orders over $199</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="bottom-block-heading"><h4>Money back guarantee <span><i class="fa-solid fa-money-bill" aria-hidden="true"></i></span></h4></div>
+                    <div class="bottom-block-description">
+                        <p>We offer 15 day easy return</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="bottom-block-heading"><h4>Online support 24/7 <span><i class="fa-solid fa-square-phone" aria-hidden="true"></i></span></h4></div>
+                    <div class="bottom-block-description">
+                        <p>Our operators are available 24/7</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <hr class="margin-top d-none d-sm-block">
+
+    <!-- footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 footer-block">
+                    <h4>Information <i class="fa fa-angle-down d-md-none" aria-hidden="true"></i></h4>
+                    <ul class="list-unstyled">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="#">Delivery Information</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms &amp; Conditions</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 footer-block">
+                    <h4>Customer Service <i class="fa fa-angle-down d-md-none" aria-hidden="true"></i></h4>
+                    <ul class="list-unstyled">
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="#">Returns</a></li>
+                        <li><a href="#">Site Map</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 footer-block">
+                    <h4>Extras <i class="fa fa-angle-down d-md-none" aria-hidden="true"></i></h4>
+                    <ul class="list-unstyled">
+                        <li><a href="product.html">Brands</a></li>
+                        <li><a href="#">Gift Vouchers</a></li>
+                        <li><a href="#">Affiliates</a></li>
+                        <li><a href="product.html">Specials</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 footer-block">
+                    <h4>My Account <i class="fa fa-angle-down d-md-none" aria-hidden="true"></i></h4>
+                    <ul class="list-unstyled">
+                        <li><a href="login.html">My Account</a></li>
+                        <li><a href="login.html">Order History</a></li>
+                        <li><a href="login.html">Wish List</a></li>
+                        <li><a href="#">Newsletter</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <div class="container">
+                &copy; 2017 All right reserved.
+            </div>
+        </div>
+    </footer>
+
+    <a href="#" class="scrollTop back-to-top" id="back-to-top" aria-label="Back to top"><i class="fa fa-angle-up" aria-hidden="true"></i></a>
+
+    <script src="js/bootstrap.bundle.min.js" defer></script>
+    <script src="js/main.js" defer></script>
+</body>
+</html>

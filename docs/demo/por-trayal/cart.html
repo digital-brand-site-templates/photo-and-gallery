@@ -1,0 +1,496 @@
+<!--
+Template Name: Por-trayal (v2.0)
+File Name: cart.html
+Author Name: ThemeVault
+Author URI: https://www.themevault.net/
+License URI: https://www.themevault.net/license/
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head><meta name="robots" content="noindex, nofollow, noarchive">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Por-trayal — Shopping Cart</title>
+    <meta name="description" content="Shopping cart with quantity updates, order totals and links through to checkout.">
+    <meta name="author" content="ThemeVault">
+    <link rel="icon" href="images/favicon.png">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/fontawesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- header -->
+    <header>
+        <div class="top-line">
+            <div class="container top-box">
+                <div class="leftside">
+                    <div class="language-block">
+                        <div class="dropdown">
+                            <span class="toggle dropdown-toggle" data-bs-toggle="dropdown" role="button" tabindex="0" aria-expanded="false">ENGLISH
+                                <span class="fa fa-angle-down" aria-hidden="true"></span></span>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">CHINESE</a></li>
+                                <li><a href="#">FRENCH</a></li>
+                                <li><a href="#">SPANISH</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="currency-block">
+                        <div class="dropdown">
+                            <span class="toggle dropdown-toggle" data-bs-toggle="dropdown" role="button" tabindex="0" aria-expanded="false">US DOLLAR
+                                <span class="fa fa-angle-down" aria-hidden="true"></span></span>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">POUND</a></li>
+                                <li><a href="#">EURO</a></li>
+                                <li><a href="#">RUPEES</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="social-icon-block">
+                        <ul class="social-list">
+                            <li><a href="#" aria-label="Por-trayal on Facebook"><i class="fa-brands fa-facebook fa-2x" aria-hidden="true"></i></a></li>
+                            <li><a href="#" aria-label="Por-trayal on Twitter"><i class="fa-brands fa-square-twitter fa-2x" aria-hidden="true"></i></a></li>
+                            <li><a href="#" aria-label="Por-trayal on Google Plus"><i class="fa-brands fa-square-google-plus fa-2x" aria-hidden="true"></i></a></li>
+                            <li><a href="#" aria-label="Por-trayal on LinkedIn"><i class="fa-brands fa-linkedin fa-2x" aria-hidden="true"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="rightside">
+                    <div class="top-button">
+                        <a href="#" aria-label="Compare"><i class="fa fa-retweet" aria-hidden="true"></i></a>
+                    </div>
+                    <div class="top-button">
+                        <a href="#" aria-label="Wish list"><i class="fa-regular fa-heart" aria-hidden="true"></i></a>
+                    </div>
+                    <div class="top-button">
+                        <div class="dropdown">
+                            <span class="toggle dropdown-toggle" data-bs-toggle="dropdown" role="button" tabindex="0" aria-expanded="false" aria-label="Account">
+                                <i class="fa fa-user" aria-hidden="true"></i>
+                            </span>
+                            <ul class="dropdown-menu">
+                                <li><a href="login.html">Login</a></li>
+                                <li><a href="register.html">Register</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- logo + search -->
+        <div class="container">
+            <div class="leftside">
+                <div class="logo">
+                    <a href="index.html"><img src="images/logo.png" alt="Por-trayal" class="img-fluid" width="200"></a>
+                </div>
+            </div>
+            <div class="rightside search-block">
+                <form class="input-group" id="search" role="search" action="product.html" method="get">
+                    <label class="visually-hidden" for="search-input">Search artwork</label>
+                    <input type="text" id="search-input" class="form-control form-control-lg search-box" placeholder="Search" name="search">
+                    <button class="btn btn-lg search-button" type="submit" aria-label="Search"><i class="fa fa-search" aria-hidden="true"></i></button>
+                </form>
+            </div>
+        </div>
+
+        <!-- navigation + cart -->
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-2"></div>
+                <div class="col-lg-7 col-md-7 col-7 rightside-add-space">
+                    <nav class="navbar navbar-expand-lg navbar-inverse menu-bar" aria-label="Main navigation">
+                        <div class="container-fluid">
+                            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#myNavbar" aria-controls="myNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="myNavbar">
+                                <ul class="nav navbar-nav">
+                                    <li><a href="index.html">Home</a></li>
+                                    <li><a href="about.html">About Us</a></li>
+                                    <li><a href="gallery.html">Gallery</a></li>
+                                    <li><a href="product.html">Shop</a></li>
+                                    <li><a href="contact.html">Contact</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+                <div class="col-lg-2 col-md-3 col-5 leftside-remove-space">
+                    <div class="btn-group btn-block box-cart">
+                        <img src="images/shopping-cart.png" width="30" alt="" aria-hidden="true">
+                        <a href="#" data-bs-toggle="dropdown" class="dropdown-toggle" role="button" aria-expanded="false"><span>Item 0 <i class="fa fa-caret-down" aria-hidden="true"></i></span></a>
+                        <ul class="dropdown-menu dropdown-menu-end btn-block cartView">
+                            <li>
+                                <table class="table">
+                                    <tbody>
+                                        <tr>
+                                            <td class="text-center">
+                                                <a href="single-product.html"><img class="img-fluid" title="Texture Design" alt="Texture Design" src="images/img6.jpg" width="40"></a>
+                                            </td>
+                                            <td class="text-start">
+                                                <a class="view_cart cart-product-name" href="single-product.html">Texture Design</a>
+                                            </td>
+                                            <td class="product-remove text-center"><a href="#" title="Remove" aria-label="Remove item"><i class="fa fa-times" aria-hidden="true"></i></a></td>
+                                        </tr>
+                                        <tr class="cart-row-divider">
+                                            <td class="text-end cart-qty"><span>Qty:</span> 1</td>
+                                            <td class="text-start cart-product-total">$122.00</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </li>
+                            <li>
+                                <div>
+                                    <table class="table">
+                                        <tbody>
+                                            <tr><td><strong>Sub-Total</strong></td><td>$100.00</td></tr>
+                                            <tr><td><strong>Eco Tax (-2.00)</strong></td><td>$2.00</td></tr>
+                                            <tr><td><strong>VAT (20%)</strong></td><td>$20.00</td></tr>
+                                            <tr><td><strong>Total</strong></td><td>$122.00</td></tr>
+                                        </tbody>
+                                    </table>
+                                    <a href="cart.html" class="btn btn-add-cart">
+                                        <span>View </span>
+                                        <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                                    </a>
+                                    <a href="checkout.html" class="btn btn-add-cart">
+                                        <span>Checkout </span>
+                                        <i class="fa fa-share" aria-hidden="true"></i>
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- main content -->
+    <main id="container">
+<div class="container">
+                <div class="row">
+                    <!--left sidebar---->
+                    <aside  class="col-md-3 left-sidebar">
+                        <div class="box category">
+                            <div class="box-heading">
+                                <h3>Categories <i class="fa fa-angle-up"></i></h3>
+                            </div>
+
+                            <div class="box-content test">
+                                <div class="box-category">
+                                    <ul class="menu">
+                                        <li><a href="product.html" class="custom_hover">Antic images</a></li>
+                                        <li><a href="product.html" class="custom_hover">Drawing</a>
+                                            <i class="fa fa-plus"></i>
+                                            <ul>
+                                                <li>
+                                                    <a class="parent" href="product.html">Praesent imperdiet</a><i class="fa fa-plus"></i>
+                                                    <ul>
+                                                        <li><a href="product.html">Aliquam eget</a></li>
+                                                        <li><a href="product.html">Lorem ipsum</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <a href="product.html">Aenean viverra</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="product.html" class="custom_hover">New Media</a></li>
+                                        <li><a href="product.html" class="custom_hover">painting</a></li>
+                                        <li><a href="product.html" class="custom_hover">Fine art</a></li>
+                                        <li><a href="product.html" class="custom_hover">Photography</a></li>
+                                        <li><a href="product.html" class="custom_hover">Decorative art</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box special">
+                            <div class="box-heading">
+                                <h3>Special</h3>
+                            </div>
+                            <div class="box-content">
+                                <div class="product-layout">
+                                    <ul class="list-unstyled">
+                                        <li>
+                                            <div class="product-thumb transiction">
+                                                <a class="compare-button"><i class="fa fa-retweet"></i></a>
+                                                <a class="wishlist-button"><i class="fa-regular fa-heart"></i></a>
+                                                <div class="image"><a href="single-product.html"><img src="images/img1.jpg" class="img-fluid"></a></div>
+                                                <div class="caption">
+                                                    <div class="product-name"><a href="#">Texture Design</a></div>
+                                                    <div class="price">
+                                                        <span class="price-new">$34.90</span>
+                                                        <span class="price-old">$49.50</span>
+                                                    </div>
+                                                </div>
+                                                <div class="cart-button">
+                                                    <a class="btn btn-add-cart" href="cart.html">
+                                                        <span>
+                                                            Add to Cart </span>
+                                                        <i class="fa fa-shopping-cart"></i>
+                                                    </a>
+                                                </div>
+                                                <div class="clearfix"></div>
+                                            </div>
+                                        </li>
+
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </aside>
+                    <!--end sidebar-->
+
+                    <!--main content-->
+                    <div class="col-md-9 checkout-page" id="content">
+                        <ul class="breadcrumb">
+                            <li><a href="login.html"><i class="fa fa-home"></i></a></li>
+                            <li><a href="cart.html">Cart</a></li>
+                        </ul>
+                        <h1>Shopping Cart &nbsp;(35.00kg)</h1>
+                        <br/>
+                        <form class="shoping-cart-view">
+                            <div class="table-responsive">
+                                <table class="table table-bordered">
+                                    <thead>
+                                        <tr>
+                                            <td class="text-center">Image</td>
+                                            <td class="text-start">Product Name</td>
+                                            <td class="text-start">Model</td>
+                                            <td class="text-start">Quantity</td>
+                                            <td class="text-end">Unit Price</td>
+                                            <td class="text-end">Total</td>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="text-center"> <div class="image">
+                                                    <a href="single-product.html"><img class="img-thumbnail" src="images/img1.jpg" width="100"></a></div>
+                                            </td>
+                                            <td class="text-start"><a href="single-product.html">Texture Design</a>
+                                                <br>
+                                                <small>Color: black</small>
+                                                <br>
+                                                <small>Size: Medium</small>
+                                                <br>
+                                                <small>Reward Points: 200</small>
+                                            </td>
+                                            <td class="text-start">Product 3</td>
+                                            <td class="text-center">
+                                                <div style="max-width: 200px;" class="input-group btn-block">
+                                                    <p class="clearfix">
+                                                        <input type="text" id="cart-q" class="form-control cart-q" size="1" value="1"></p>
+                                                    <div>
+                                                        <button class="btn btn-custom"  type="submit" ><i class="fa fa-refresh"></i></button>
+                                                        <button class="btn btn-custom"  type="button" ><i class="fa fa-times-circle"></i></button>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td class="text-end"><div class="price">$194.50</div></td>
+                                            <td class="text-end"><div class="price price-total">$194.50</div></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </form>
+                        <h2>What would you like to do next?</h2>
+                        <p>Choose if you have a discount code or reward points you want to use or would like to estimate your delivery cost.</p>
+                        <div id="accordion" class="panel-group">
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title"><a data-bs-parent="#accordion" data-bs-toggle="collapse" class="accordion-toggle" href="#collapse-coupon">Use Coupon Code <i class="fa fa-caret-down"></i></a></h4>
+                                </div>
+                                <div class="panel-collapse collapse in" id="collapse-coupon">
+                                    <div class="panel-body">
+                                        <label for="input-coupon" class="col-md-2 control-label">Enter Your Coupon Code Here</label>
+                                        <div>
+                                            <input type="text" class="form-control" id="input-coupon" placeholder="Enter your coupon  code here" value="" name="coupon">
+                                            <span>
+                                                <input type="button" class="btn btn-custom"  id="button-coupon" value="Apply Coupon">
+                                            </span></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title"><a class="accordion-toggle" data-bs-parent="#accordion" data-bs-toggle="collapse" href="#collapse-voucher">Use Gift Voucher <i class="fa fa-caret-down"></i></a></h4>
+                                </div>
+                                <div class="panel-collapse collapse" id="collapse-voucher" style="height: auto;">
+                                    <div class="panel-body">
+                                        <label for="input-voucher" class="col-md-2 control-label">Enter Your Gift Voucher Code Here</label>
+                                        <div>
+                                            <input type="text" class="form-control" id="input-voucher" placeholder="Enter your gift voucher code here" value="" name="voucher">
+                                            <span>
+                                                <input type="submit" class="btn btn-custom"  id="button-voucher" value="Apply Voucher">
+                                            </span> </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title"><a data-bs-parent="#accordion" data-bs-toggle="collapse" class="accordion-toggle" href="#collapse-shipping">Estimate Shipping &amp; Taxes <i class="fa fa-caret-down"></i></a></h4>
+                                </div>
+                                <div class="panel-collapse collapse" id="collapse-shipping" style="height: auto;">
+                                    <div class="panel-body">
+                                        <p>Enter your destination to get a shipping estimate.</p>
+                                        <form class="form-horizontal">
+                                            <div class="form-group required">
+                                                <label for="input-country" class="col-md-2 control-label">Country</label>
+                                                <div class="col-md-10">
+                                                    <select class="form-control" id="input-country" name="country_id">
+                                                        <option value=""> --- Please Select --- </option>
+                                                        <option value="1">India</option>
+                                                        <option value="2">U.K</option>
+                                                        <option value="3">U.S.A</option>
+                                                        <option value="4">Japan</option>
+                                                        <option value="5">Malaysia</option>
+                                                    </select> 
+                                                </div>
+                                            </div>
+                                            <div class="form-group required">
+                                                <label for="input-zone" class="col-md-2 control-label">Region / State</label>
+                                                <div class="col-md-10">
+                                                    <select class="form-control" id="input-zone" name="zone_id">
+                                                        <option value=""> --- Please Select --- </option>
+                                                        <option value="3513">Gujarat</option>
+                                                        <option value="3514">Manchester</option>
+                                                        <option value="3515">New Jersey</option>
+                                                        <option value="3516">Tokyo</option>
+                                                        <option value="3517">Johor</option>     
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="form-group required">
+                                                <label for="input-postcode" class="col-md-2 control-label">Post Code</label>
+                                                <div class="col-md-10">
+                                                    <input type="text" class="form-control" id="input-postcode" placeholder="Post Code" value="Enter Proper Post Code" name="postcode">
+                                                </div>
+                                            </div>
+                                            <input type="button" class="btn btn-custom"  id="button-quote" value="Get Quotes">
+                                        </form>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <br/>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <table class="table table-bordered">
+                                    <tbody><tr>
+                                            <td class="text-end"><strong>Sub-Total:</strong></td>
+                                            <td class="text-end"><div class="price">$1,034.50</div></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-end"><strong>Eco Tax (-2.00):</strong></td>
+                                            <td class="text-end"><div class="price">$2.00</div></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-end"><strong>VAT (20%):</strong></td>
+                                            <td class="text-end"><div class="price">$206.90</div></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-end"><strong>Total:</strong></td>
+                                            <td class="text-end"><div class="price">$1,243.40</div></td>
+                                        </tr>
+                                    </tbody></table>
+                            </div>
+                        </div>
+                        <div class="buttons">
+                            <div class="float-start"><a class="btn btn-custom" href="product.html">Continue Shopping</a></div>
+                            <div class="float-end"><a class="btn btn-custom" href="checkout.html">Checkout</a></div>
+                        </div>
+                    </div>
+                    <!--end main content-->
+                </div>
+            </div>
+        
+        <!--End of middle content-->
+    </main>
+
+    <!-- service strip -->
+    <div class="container">
+        <div class="row">
+            <div class="bottom-block">
+                <div class="col-lg-4">
+                    <div class="bottom-block-heading"><h4>Free Shopping <span><i class="fa fa-truck" aria-hidden="true"></i></span></h4></div>
+                    <div class="bottom-block-description">
+                        <p>Free delivery on all orders over $199</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="bottom-block-heading"><h4>Money back guarantee <span><i class="fa-solid fa-money-bill" aria-hidden="true"></i></span></h4></div>
+                    <div class="bottom-block-description">
+                        <p>We offer 15 day easy return</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="bottom-block-heading"><h4>Online support 24/7 <span><i class="fa-solid fa-square-phone" aria-hidden="true"></i></span></h4></div>
+                    <div class="bottom-block-description">
+                        <p>Our operators are available 24/7</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <hr class="margin-top d-none d-sm-block">
+
+    <!-- footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 footer-block">
+                    <h4>Information <i class="fa fa-angle-down d-md-none" aria-hidden="true"></i></h4>
+                    <ul class="list-unstyled">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="#">Delivery Information</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms &amp; Conditions</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 footer-block">
+                    <h4>Customer Service <i class="fa fa-angle-down d-md-none" aria-hidden="true"></i></h4>
+                    <ul class="list-unstyled">
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="#">Returns</a></li>
+                        <li><a href="#">Site Map</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 footer-block">
+                    <h4>Extras <i class="fa fa-angle-down d-md-none" aria-hidden="true"></i></h4>
+                    <ul class="list-unstyled">
+                        <li><a href="product.html">Brands</a></li>
+                        <li><a href="#">Gift Vouchers</a></li>
+                        <li><a href="#">Affiliates</a></li>
+                        <li><a href="product.html">Specials</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 footer-block">
+                    <h4>My Account <i class="fa fa-angle-down d-md-none" aria-hidden="true"></i></h4>
+                    <ul class="list-unstyled">
+                        <li><a href="login.html">My Account</a></li>
+                        <li><a href="login.html">Order History</a></li>
+                        <li><a href="login.html">Wish List</a></li>
+                        <li><a href="#">Newsletter</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <div class="container">
+                &copy; 2017 All right reserved.
+            </div>
+        </div>
+    </footer>
+
+    <a href="#" class="scrollTop back-to-top" id="back-to-top" aria-label="Back to top"><i class="fa fa-angle-up" aria-hidden="true"></i></a>
+
+    <script src="js/bootstrap.bundle.min.js" defer></script>
+    <script src="js/main.js" defer></script>
+</body>
+</html>

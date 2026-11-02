@@ -8,3 +8,4 @@ Static website templates for the Photo Gallery category.
 
 Preview gallery: https://digital-brand-site-templates.github.io/photo-and-gallery/
 
+- [Por-trayal](por-trayal/)

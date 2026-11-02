@@ -1,0 +1,443 @@
+<!--
+Template Name: Por-trayal (v2.0)
+File Name: register.html
+Author Name: ThemeVault
+Author URI: https://www.themevault.net/
+License URI: https://www.themevault.net/license/
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head><meta name="robots" content="noindex, nofollow, noarchive">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Por-trayal — Create an Account</title>
+    <meta name="description" content="Registration page for new customers, with personal details, password and newsletter options.">
+    <meta name="author" content="ThemeVault">
+    <link rel="icon" href="images/favicon.png">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/fontawesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- header -->
+    <header>
+        <div class="top-line">
+            <div class="container top-box">
+                <div class="leftside">
+                    <div class="language-block">
+                        <div class="dropdown">
+                            <span class="toggle dropdown-toggle" data-bs-toggle="dropdown" role="button" tabindex="0" aria-expanded="false">ENGLISH
+                                <span class="fa fa-angle-down" aria-hidden="true"></span></span>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">CHINESE</a></li>
+                                <li><a href="#">FRENCH</a></li>
+                                <li><a href="#">SPANISH</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="currency-block">
+                        <div class="dropdown">
+                            <span class="toggle dropdown-toggle" data-bs-toggle="dropdown" role="button" tabindex="0" aria-expanded="false">US DOLLAR
+                                <span class="fa fa-angle-down" aria-hidden="true"></span></span>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">POUND</a></li>
+                                <li><a href="#">EURO</a></li>
+                                <li><a href="#">RUPEES</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="social-icon-block">
+                        <ul class="social-list">
+                            <li><a href="#" aria-label="Por-trayal on Facebook"><i class="fa-brands fa-facebook fa-2x" aria-hidden="true"></i></a></li>
+                            <li><a href="#" aria-label="Por-trayal on Twitter"><i class="fa-brands fa-square-twitter fa-2x" aria-hidden="true"></i></a></li>
+                            <li><a href="#" aria-label="Por-trayal on Google Plus"><i class="fa-brands fa-square-google-plus fa-2x" aria-hidden="true"></i></a></li>
+                            <li><a href="#" aria-label="Por-trayal on LinkedIn"><i class="fa-brands fa-linkedin fa-2x" aria-hidden="true"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="rightside">
+                    <div class="top-button">
+                        <a href="#" aria-label="Compare"><i class="fa fa-retweet" aria-hidden="true"></i></a>
+                    </div>
+                    <div class="top-button">
+                        <a href="#" aria-label="Wish list"><i class="fa-regular fa-heart" aria-hidden="true"></i></a>
+                    </div>
+                    <div class="top-button">
+                        <div class="dropdown">
+                            <span class="toggle dropdown-toggle" data-bs-toggle="dropdown" role="button" tabindex="0" aria-expanded="false" aria-label="Account">
+                                <i class="fa fa-user" aria-hidden="true"></i>
+                            </span>
+                            <ul class="dropdown-menu">
+                                <li><a href="login.html">Login</a></li>
+                                <li><a href="register.html">Register</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- logo + search -->
+        <div class="container">
+            <div class="leftside">
+                <div class="logo">
+                    <a href="index.html"><img src="images/logo.png" alt="Por-trayal" class="img-fluid" width="200"></a>
+                </div>
+            </div>
+            <div class="rightside search-block">
+                <form class="input-group" id="search" role="search" action="product.html" method="get">
+                    <label class="visually-hidden" for="search-input">Search artwork</label>
+                    <input type="text" id="search-input" class="form-control form-control-lg search-box" placeholder="Search" name="search">
+                    <button class="btn btn-lg search-button" type="submit" aria-label="Search"><i class="fa fa-search" aria-hidden="true"></i></button>
+                </form>
+            </div>
+        </div>
+
+        <!-- navigation + cart -->
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-2"></div>
+                <div class="col-lg-7 col-md-7 col-7 rightside-add-space">
+                    <nav class="navbar navbar-expand-lg navbar-inverse menu-bar" aria-label="Main navigation">
+                        <div class="container-fluid">
+                            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#myNavbar" aria-controls="myNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="myNavbar">
+                                <ul class="nav navbar-nav">
+                                    <li><a href="index.html">Home</a></li>
+                                    <li><a href="about.html">About Us</a></li>
+                                    <li><a href="gallery.html">Gallery</a></li>
+                                    <li><a href="product.html">Shop</a></li>
+                                    <li><a href="contact.html">Contact</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+                <div class="col-lg-2 col-md-3 col-5 leftside-remove-space">
+                    <div class="btn-group btn-block box-cart">
+                        <img src="images/shopping-cart.png" width="30" alt="" aria-hidden="true">
+                        <a href="#" data-bs-toggle="dropdown" class="dropdown-toggle" role="button" aria-expanded="false"><span>Item 0 <i class="fa fa-caret-down" aria-hidden="true"></i></span></a>
+                        <ul class="dropdown-menu dropdown-menu-end btn-block cartView">
+                            <li>
+                                <table class="table">
+                                    <tbody>
+                                        <tr>
+                                            <td class="text-center">
+                                                <a href="single-product.html"><img class="img-fluid" title="Texture Design" alt="Texture Design" src="images/img6.jpg" width="40"></a>
+                                            </td>
+                                            <td class="text-start">
+                                                <a class="view_cart cart-product-name" href="single-product.html">Texture Design</a>
+                                            </td>
+                                            <td class="product-remove text-center"><a href="#" title="Remove" aria-label="Remove item"><i class="fa fa-times" aria-hidden="true"></i></a></td>
+                                        </tr>
+                                        <tr class="cart-row-divider">
+                                            <td class="text-end cart-qty"><span>Qty:</span> 1</td>
+                                            <td class="text-start cart-product-total">$122.00</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </li>
+                            <li>
+                                <div>
+                                    <table class="table">
+                                        <tbody>
+                                            <tr><td><strong>Sub-Total</strong></td><td>$100.00</td></tr>
+                                            <tr><td><strong>Eco Tax (-2.00)</strong></td><td>$2.00</td></tr>
+                                            <tr><td><strong>VAT (20%)</strong></td><td>$20.00</td></tr>
+                                            <tr><td><strong>Total</strong></td><td>$122.00</td></tr>
+                                        </tbody>
+                                    </table>
+                                    <a href="cart.html" class="btn btn-add-cart">
+                                        <span>View </span>
+                                        <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                                    </a>
+                                    <a href="checkout.html" class="btn btn-add-cart">
+                                        <span>Checkout </span>
+                                        <i class="fa fa-share" aria-hidden="true"></i>
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- main content -->
+    <main id="container">
+<div class="container">
+                <div class="row">
+                    <!--left sidebar---->
+                    <aside class="col-md-3 left-sidebar">
+                        <div class="box category">
+                            <div class="box-heading">
+                                <h3>Account <i class="fa fa-angle-up"></i></h3>
+                            </div>
+
+                            <div class="box-content test">
+                                <div class="box-category">
+                                    <ul class="menu">
+                                        <li><a href="#">Login</a></li>
+                                        <li><a href="register.html">Register</a></li>
+                                        <li><a href="#">Forgotten Password</a></li>
+                                        <li><a href="#">My Account</a></li>
+                                        <li><a href="#">Address Books</a></li>
+                                        <li><a href="#">Wish List</a> </li>
+                                        <li><a href="#">Order History</a> </li>
+                                        <li><a href="#">Downloads</a></li>
+                                        <li><a href="#">Reward Points</a></li>
+                                        <li><a href="#">Returns</a></li>
+                                        <li><a href="#">Transactions</a> </li>
+                                        <li><a href="#">Newsletter</a></li>
+                                        <li><a href="#">Recurring payments</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                    </aside>
+                    <!--end sidebar-->
+
+                    <!--main content-->
+                    <div class="col-md-9" id="content"><ul class="breadcrumb">
+                            <li><a href="index.html"><i class="fa fa-home"></i></a></li>
+                            <li><a href="#">Register</a></li>
+                        </ul>
+                        <h1>Register Account</h1>
+                        <p>If you already have an account with us, please login at the 
+                            <a href="login.html">login page</a>.</p>
+                        <form class="form-horizontal">
+                            <fieldset id="account">
+                                <legend>Your Personal Details</legend>
+                                <div style="display: none;" class="form-group required">
+                                    <label class="col-md-4 control-label">Customer Group</label>
+                                    <div class="col-md-8">
+                                        <div class="radio">
+                                            <label>
+                                                <input type="radio" checked="checked" value="1" name="">
+                                                Default</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group required">
+                                    <label for="input-firstname" class="col-md-4 control-label">First Name</label>
+                                    <div class="col-md-8">
+                                        <input type="text" class="form-control" id="input-firstname" placeholder="First Name" value="" name="firstname">
+                                    </div>
+                                </div>
+                                <div class="form-group required">
+                                    <label for="input-lastname" class="col-md-4 control-label">Last Name</label>
+                                    <div class="col-md-8">
+                                        <input type="text" class="form-control" id="input-lastname" placeholder="Last Name" value="" name="lastname">
+                                    </div>
+                                </div>
+                                <div class="form-group required">
+                                    <label for="input-email" class="col-md-4 control-label">E-Mail</label>
+                                    <div class="col-md-8">
+                                        <input type="email" class="form-control" id="input-email" placeholder="E-Mail" value="" name="email">
+                                    </div>
+                                </div>
+                                <div class="form-group required">
+                                    <label for="input-telephone" class="col-md-4 control-label">Telephone</label>
+                                    <div class="col-md-8">
+                                        <input type="tel" class="form-control" id="input-telephone" placeholder="Telephone" value="" name="telephone">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="input-fax" class="col-md-4 control-label">Fax</label>
+                                    <div class="col-md-8">
+                                        <input type="text" class="form-control" id="input-fax" placeholder="Fax" value="" name="fax">
+                                    </div>
+                                </div>
+                            </fieldset>
+                            <fieldset id="address">
+                                <legend>Your Address</legend>
+                                <div class="form-group">
+                                    <label for="input-company" class="col-md-4 control-label">Company</label>
+                                    <div class="col-md-8">
+                                        <input type="text" class="form-control" id="input-company" placeholder="Company" value="" name="company">
+                                    </div>
+                                </div>
+                                <div class="form-group required">
+                                    <label for="input-address-1" class="col-md-4 control-label">Address 1</label>
+                                    <div class="col-md-8">
+                                        <input type="text" class="form-control" id="input-address-1" placeholder="Address 1" value="" name="address_1">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="input-address-2" class="col-md-4 control-label">Address 2</label>
+                                    <div class="col-md-8">
+                                        <input type="text" class="form-control" id="input-address-2" placeholder="Address 2" value="" name="address_2">
+                                    </div>
+                                </div>
+                                <div class="form-group required">
+                                    <label for="input-city" class="col-md-4 control-label">City</label>
+                                    <div class="col-md-8">
+                                        <input type="text" class="form-control" id="input-city" placeholder="City" value="" name="city">
+                                    </div>
+                                </div>
+                                <div class="form-group required">
+                                    <label for="input-postcode" class="col-md-4 control-label">Post Code</label>
+                                    <div class="col-md-8">
+                                        <input type="text" class="form-control" id="input-postcode" placeholder="Post Code" value="" name="postcode">
+                                    </div>
+                                </div>
+                                <div class="form-group required">
+                                    <label for="input-country" class="col-md-4 control-label">Country</label>
+                                    <div class="col-md-8">
+                                        <select class="form-control" id="input-country" name="country_id">
+                                            <option value=""> --- Please Select --- </option>
+                                            <option value="2">U.K</option>
+                                            <option value="3">U.S.A</option>
+                                            <option value="4">Japan</option>
+                                            <option value="5">Malaysia</option>
+
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group required">
+                                    <label for="input-zone" class="col-md-4 control-label">Region / State</label>
+                                    <div class="col-md-8">
+                                        <select class="form-control" id="input-zone" name="zone_id">
+                                            <option value=""> --- Please Select --- </option>
+                                            <option value="3513">Gujarat</option>
+                                            <option value="3514">Manchester</option>
+                                            <option value="3515">New Jersey</option>
+                                            <option value="3516">Tokyo</option>
+                                            <option value="3517">Johor</option>      
+                                        </select>
+                                    </div>
+                                </div>
+                            </fieldset>
+                            <fieldset>
+                                <legend>Your Password</legend>
+                                <div class="form-group required">
+                                    <label for="input-password" class="col-md-4 control-label">Password</label>
+                                    <div class="col-md-8">
+                                        <input type="password" class="form-control" id="input-password" placeholder="Password" value="" name="password">
+                                    </div>
+                                </div>
+                                <div class="form-group required">
+                                    <label for="input-confirm" class="col-md-4 control-label">Password Confirm</label>
+                                    <div class="col-md-8">
+                                        <input type="password" class="form-control" id="input-confirm" placeholder="Password Confirm" value="" name="confirm">
+                                    </div>
+                                </div>
+                            </fieldset>
+                            <fieldset>
+                                <legend>Newsletter</legend>
+                                <div class="form-group">
+                                    <label class="col-md-4 control-label">Subscribe</label>
+                                    <div class="col-md-8">
+                                        <label class="radio-inline">
+                                            <input type="radio" value="1" name="newsletter">
+                                            Yes</label>
+                                        <label class="radio-inline">
+                                            <input type="radio" checked="checked" value="0" name="newsletter">
+                                            No</label>
+                                    </div>
+                                </div>
+                            </fieldset>
+                            <div class="buttons">
+                                <div class="float-end">I have read and agree to the <a class="agree"><b>Privacy Policy</b></a> <input type="checkbox" value="1" name="agree" style="vertical-align:text-bottom" >
+                                    &nbsp;
+                                    <input type="submit" class="btn btn-custom" value="Continue">
+                                </div>
+                            </div>
+                            <div class="clearfix"></div>
+                        </form>
+                    </div>
+                    <!--end main content-->
+                </div>
+            </div>
+        
+        <!--End of middle content-->
+    </main>
+
+    <!-- service strip -->
+    <div class="container">
+        <div class="row">
+            <div class="bottom-block">
+                <div class="col-lg-4">
+                    <div class="bottom-block-heading"><h4>Free Shopping <span><i class="fa fa-truck" aria-hidden="true"></i></span></h4></div>
+                    <div class="bottom-block-description">
+                        <p>Free delivery on all orders over $199</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="bottom-block-heading"><h4>Money back guarantee <span><i class="fa-solid fa-money-bill" aria-hidden="true"></i></span></h4></div>
+                    <div class="bottom-block-description">
+                        <p>We offer 15 day easy return</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="bottom-block-heading"><h4>Online support 24/7 <span><i class="fa-solid fa-square-phone" aria-hidden="true"></i></span></h4></div>
+                    <div class="bottom-block-description">
+                        <p>Our operators are available 24/7</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <hr class="margin-top d-none d-sm-block">
+
+    <!-- footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 footer-block">
+                    <h4>Information <i class="fa fa-angle-down d-md-none" aria-hidden="true"></i></h4>
+                    <ul class="list-unstyled">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="#">Delivery Information</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms &amp; Conditions</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 footer-block">
+                    <h4>Customer Service <i class="fa fa-angle-down d-md-none" aria-hidden="true"></i></h4>
+                    <ul class="list-unstyled">
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="#">Returns</a></li>
+                        <li><a href="#">Site Map</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 footer-block">
+                    <h4>Extras <i class="fa fa-angle-down d-md-none" aria-hidden="true"></i></h4>
+                    <ul class="list-unstyled">
+                        <li><a href="product.html">Brands</a></li>
+                        <li><a href="#">Gift Vouchers</a></li>
+                        <li><a href="#">Affiliates</a></li>
+                        <li><a href="product.html">Specials</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 footer-block">
+                    <h4>My Account <i class="fa fa-angle-down d-md-none" aria-hidden="true"></i></h4>
+                    <ul class="list-unstyled">
+                        <li><a href="login.html">My Account</a></li>
+                        <li><a href="login.html">Order History</a></li>
+                        <li><a href="login.html">Wish List</a></li>
+                        <li><a href="#">Newsletter</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <div class="container">
+                &copy; 2017 All right reserved.
+            </div>
+        </div>
+    </footer>
+
+    <a href="#" class="scrollTop back-to-top" id="back-to-top" aria-label="Back to top"><i class="fa fa-angle-up" aria-hidden="true"></i></a>
+
+    <script src="js/bootstrap.bundle.min.js" defer></script>
+    <script src="js/main.js" defer></script>
+</body>
+</html>

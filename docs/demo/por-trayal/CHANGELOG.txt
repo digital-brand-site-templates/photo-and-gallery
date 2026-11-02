@@ -1,0 +1,70 @@
+PortRayal — Online Art Gallery & Store Template
+================================================
+
+Version 2.0 — 2026
+------------------
+
+A full rebuild on a modern stack, plus three pages the original advertised but
+never included. The design is unchanged — the layout, colours and typography
+are the ones you know.
+
+THREE NEW PAGES
+- about.html — the gallery's story, what it stands for, and visiting details.
+- contact.html — address, hours and phone, an enquiry form, and a location map.
+- gallery.html — a filterable artwork gallery with a full-screen lightbox
+  (keyboard navigable), separate from the shop grid.
+  The main menu now links Home, About Us, Gallery, Shop and Contact.
+
+FRAMEWORK
+- Rebuilt on Bootstrap 5.3 (was Bootstrap 3): grids, navbar, dropdowns,
+  carousel, tabs and forms all use current markup.
+- jQuery removed completely, along with the bxSlider plugin. The template ships
+  one small plain-JavaScript file (js/main.js).
+- Font Awesome updated from 4 to 6.
+- Lato is now self-hosted (four web font files included) instead of being
+  fetched from Google at runtime: faster, GDPR-friendly and works offline.
+
+FIXES
+- Dead interface elements: in v1 between 27 and 40 links per page had no
+  destination at all — the entire footer (18 items), the language and currency
+  switchers, and the "About Us" and "Contact" menu items were plain text
+  dressed up as links. Everything is now a working link.
+- The menu advertised About Us and Contact, which did not exist. They do now.
+- Removed leftover demo content from the shop layout this template was built
+  from: a product called "iPod Classic" appeared 18 times in an art gallery.
+- Removed a debugging statement (console.log) that shipped in the product
+  gallery script.
+- Fixed a CSS comment written with // (not valid CSS), which silently voided
+  the rule that followed it.
+- The service strip at the foot of each page never rendered at its correct
+  height because its floats were not cleared.
+- Every page now has its own title and meta description (all eight previously
+  shared the single title "PortRayal"), one h1, image alt text, and lazy
+  loading for images below the fold.
+
+RESPONSIVE
+- Rechecked every page at 1920, 1280, 992, 768, 575 and 390 pixels against the
+  original, block by block.
+- On phones the sidebar now sits below the page content instead of above it.
+  In v1 the "Special" products pushed the actual page down by around 2,500
+  pixels before a visitor reached it.
+
+ACCESSIBILITY
+- Keyboard-operable menus, category tree, product gallery and lightbox.
+- Labelled form fields, search and icon-only controls.
+- Honours the system "reduce motion" setting.
+
+BROWSER SUPPORT
+- All current versions of Chrome, Edge, Firefox and Safari (desktop + mobile).
+- Internet Explorer is no longer supported (it reached end of life in 2022).
+
+NOTES
+- Images in this download are intentionally blurred placeholders. Replace them
+  with your own; the live demo shows the layout with photographs in place.
+- The footer credit link may be removed under the terms of the backlink-removal
+  purchase — see License.txt.
+
+
+Version 1.0
+-----------
+- Initial release.
